@@ -46,7 +46,7 @@ You can change the text editor theme by changing the highlight.js css to the fol
 ```
 You can change transition by changing the reveal transition property in Reveal.initialize
 ```javascript
-  Reveal.initialize({
-  				transition:  'default', // default/cube/page/concave/zoom/linear/none
-  			});
+    Reveal.initialize({
+        transition:  'default', // default/cube/page/concave/zoom/linear/none
+  	});
 ```
