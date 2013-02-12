@@ -76,8 +76,8 @@
           <p>Two new HTML elements!</p>
           <div class="left-align">
           <p>Style multiple elements the same way by grouping them together.</p>
-          <p>&lt;span> creates an inline element.</p>
-          <p>&lt;div> creates a block element.</p>
+          <p class="fragment">&lt;span> creates an inline element.</p>
+          <p class="fragment">&lt;div> creates a block element.</p>
           </div>
         </section>
         
@@ -87,33 +87,42 @@
           <div class = "left-align">
           <p>The div tag is a great way to apply styles to a bunch of  elements all at once.</p>
           <p>The div tag is used everywhere to group elements together into sections.</p>
-          <p>For example, what if we want the first 2 paragraphs to be right-aligned, but we don't want any other paragraphs to be right-aligned?</p>
+          <p>For example:</p>
+<pre><code class="html">
+  &lt;div class="right">
+    &lt;p>These paragraphs can be styled together&lt;/p>
+    &lt;p>By using a css class like .right { text-align: right; }&lt;/p>
+  &lt;/div>
+
+  &lt;p>But, I'll still be aligned to the left. I'm lonely :/ &lt;/p>
+</pre></code>
           </div>
         </section>
         
         <section>
-          <h3>Grouping elements with div, cont.</h3>
+          <h3>DIV group in action</h3>
 <pre><code class = "html">
-.align-right{
+.right{
   text-align:right;
 }
 </code></pre>
 
 <pre><code class ="html">
-&lt;div class = "align-right">
-  &lt;a href = "http://twitter.com/girldevelopit">Twitter!&lt;/a> |
-  &lt;a href = "http://facebook.com/girldevelopit">Facebook!&lt;/a>
+&lt;div class="right">
+  &lt;a href="http://twitter.com/girldevelopit">Twitter!&lt;/a> |
+  &lt;a href="http://facebook.com/girldevelopit">Facebook!&lt;/a>
 &lt;/div>
-&lt;a href = "http://girldevelopit">Website!&lt;/a> | 
-&lt;a href = "http://girldevelopit.tumblr.com">Blog!&lt;/a>
+&lt;a href="http://girldevelopit.com">Website!&lt;/a> | 
+&lt;a href="http://girldevelopit.tumblr.com">Blog!&lt;/a>
 </code></pre>
-<div style = "text-align:right;">
-  <a href = "http://twitter.com/girldevelopit">Twitter!</a> |
-  <a href = "http://facebook.com/girldevelopit">Facebook!</a>
+<p>See? How fun!</p>
+<div style="text-align:right;">
+  <a href="http://twitter.com/girldevelopit">Twitter!</a> |
+  <a href="http://facebook.com/girldevelopit">Facebook!</a>
 </div>
-<div class = "left-align">
-<a href = "http://girldevelopit">Website!</a> | 
-<a href = "http://girldevelopit.tumblr.com">Blog!</a>
+<div class="left-align">
+<a href="http://girldevelopit.com">Website!</a> | 
+<a href="http://girldevelopit.tumblr.com">Blog!</a>
 </div>
         </section>
        
@@ -195,39 +204,39 @@ a:link
         <section>
           <h3>Padding</h3>
           15 pixels on all sides
-<pre><code class ="html">
-padding: 15px;
+<pre><code class="css">
+p { padding: 15px; }
 </code></pre>
           10 pixels on top only
-<pre><code class ="html">
-padding-top: 10px;
+<pre><code class="css">
+p { padding-top: 10px; }
 </code></pre>
           10 on top, 5 on right, 3 on bottom, 5 on left
-<pre><code class ="html">
-padding: 10px 5px 3px 5px;
+<pre><code class="css">
+p { padding: 10px 5px 3px 5px; }
 </code></pre>  
         </section>
        
         <section>
           <h3>Padding</h3>
           <p>Four values<p>
-<pre><code class = "html">
-  padding: top right bottom left;
+<pre><code class="css">
+p { padding: top right bottom left; }
 </code></pre>
           <p>Two values</p>
-<pre><code class = "html">
-  padding: top/bottom right/left;
+<pre><code class="css">
+p { padding: top/bottom right/left; }
 </code></pre>
           <p>One value</p>
-<pre><code class = "html">
-  padding: all;
+<pre><code class="css">
+p { padding: all; }
 </code></pre>
         </section>
        
         <section>
           <h3>Padding</h3>
-<pre><code class ="html">
-  padding: 10px 20px 30px 40px;
+<pre><code class="css">
+div { padding: 10px 20px 30px 40px; }
 </code></pre>
         <img src ="images/padding.png"/>
         </section>
@@ -242,26 +251,26 @@ padding: 10px 5px 3px 5px;
         <section>
           <h3>Border</h3>
           <p>A solid red border</p>
-<pre><code class = "html">
-  border: 1px solid #ff0000;
+<pre><code class="css">
+p { border: 1px solid #ff0000; }
 </code></pre>
           <p>A thick dotted black top border</p>
-<pre><code class ="html">
-  border-top: 4px dotted #000000;
+<pre><code class="css">
+div { border-top: 4px dotted #000000; }
 </code></pre>
           <p>Two diﬀerent border styles</p>
-<pre><code class ="html">
-  border-top: 1px solid #ff0000;
-  border-bottom: 4px dotted #000000;
+<pre><code class="css">
+address { border-top: 1px solid #ff0000; }
+blockquote { border-bottom: 4px dotted #000000; }
 </code></pre>
         </section>
        
         <section>
           <h3>Border - Other Properties</h3>
-<pre><code class ="html">
-  border-width: 10px;
-  border-style: dashed;
-  border-color: #666666;
+<pre><code class="css">
+p { border-width: 10px; }
+p { border-style: dashed; }
+p { border-color: #666666; }
 </code></pre>
           <p>You can specify each property separately, or all three together.</p>
         </section>
@@ -276,16 +285,16 @@ padding: 10px 5px 3px 5px;
         <section>
           <h3>Margin</h3>
           <p>15 pixels on all sides</p>
-<pre><code class = "html">
-  margin: 15px;
+<pre><code class="css">
+p { margin: 15px; }
 </code></pre>
           <p>10 on top, 5 on right, 3 on bottom, 5 on left</p>
-<pre><code class ="html">
-  margin: 10px 5px 3px 5px;
+<pre><code class="css">
+p { margin: 10px 5px 3px 5px; }
 </code></pre>
           <p>10 pixels on top</p>
-<pre><code class = "html">
-  margin-top: 10px;
+<pre><code class="css">
+p { margin-top: 10px; }
 </code></pre>
         </section>
         
