@@ -185,9 +185,9 @@ img {
           <p class="left-align">How can we identify a single item on the page?</p>
           <p class="fragment left-align">By giving it an 'id'.</p>
 <pre class="fragment"><code class="html">
-  &lt;p id="mainParagraph">This is the most important paragraph, and we should probably style it in some way so it stands out.&lt;/p>
+  &lt;p id="footer">This is the footer of our website, and we should probably style it in some way so it hangs out at the bottom.&lt;/p>
 </code></pre>
-          <p class="fragment left-align">The 'id' of that paragraph is 'mainParagraph'</p>
+          <p class="fragment left-align">The 'id' of that paragraph is 'footer'</p>
           <p class="fragment left-align">There can be only one.</p>
 
         </section>
@@ -428,6 +428,7 @@ p {
         <section>
           <h3>Cascading</h3>
           <p>Styles "cascade" down until changed</p>
+          <p class="left-align small">style.css</p>
 <pre><code class="html">
 p{
   color:blue;
@@ -440,7 +441,7 @@ p{
   font-family: Arial;
 }
 </code></pre>
-
+          <p class="left-align small">index.html</p>
 <pre><code class="html">
   &lt;p>Paragraph&lt;/p>
   &lt;p class ="green">Paragraph&lt;/p>
