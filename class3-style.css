@@ -1,0 +1,12 @@
+a:link { color: blue; text-decoration: underline; }
+a:visited { color: blue; }
+a:hover { color: red; text-decoration: overline; }
+a:active: { color: red; }
+
+.right {
+    text-align: right;
+}
+
+.kim-jong-un {
+    font-size: 150%;
+}

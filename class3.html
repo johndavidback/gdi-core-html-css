@@ -65,7 +65,7 @@
             <li>Two HTML types: Block and Inline.</li>
             <li>After block elements, browsers render a new line.</li>
             <li>Block elements: p, h1, ul, li, almost everything else</li>
-            <li>Block elemnts contain inline elements</li>
+            <li>Block elements contain inline elements</li>
             <li>Inline elements: img, a, br, em, strong</li>
           </ul>
         </section>
@@ -78,6 +78,9 @@
           <p>Style multiple elements the same way by grouping them together.</p>
           <p class="fragment">&lt;span> creates an inline element.</p>
           <p class="fragment">&lt;div> creates a block element.</p>
+<pre class="fragment"><code class="html">
+  &lt;div>The quick &lt;span class="brown">brown fox&lt;/span> jumps over the lazy duck?&lt;/div>
+</code></pre>
           </div>
         </section>
         
@@ -91,7 +94,7 @@
 <pre><code class="html">
   &lt;div class="right">
     &lt;p>These paragraphs can be styled together&lt;/p>
-    &lt;p>By using a css class like .right { text-align: right; }&lt;/p>
+    &lt;p>By using a css rule for class "right"&lt;/p>
   &lt;/div>
 
   &lt;p>But, I'll still be aligned to the left. I'm lonely :/ &lt;/p>
@@ -131,8 +134,8 @@
           <h3>Span</h3>
           <p>Span is used to apply a specific style inline</p>
           
-<pre><code class ="html">
-.yellow{
+<pre><code class="html">
+.yellow {
   color:yellow;
 }
 </code></pre>
@@ -184,9 +187,10 @@ a:link
         <!-- Exercise-->
         <section>
           <h3>Let's Develop It</h3>
-          <p class="left-align">Start dividing your links and paragraphs into divs.</p>
-          <p class="left-align">Add pseudo classes to your links</p>
-          <p class="left-align">Bonus: Add text-decoration: none; to one of your new classes and see what it does.</p>
+          <p class="left-align">1. Start dividing your links and paragraphs into divs.</p>
+          <p class="left-align">2. Add pseudo classes to your links.</p>
+          <p>&nbsp;</p>
+          <p class="left-align">Bonus: Add <span style="font-family: Courier;">text-decoration: none;</span> to one of your new classes and see what it does.</p>
         </section>
         
         <!-- Box model-->
@@ -287,6 +291,10 @@ p { border-style: dashed; }
 p { border-color: #666666; }
 </code></pre>
           <p>You can specify each property separately, or all three together.</p>
+          <p>Padding:</p>
+<pre><code class="css">
+p { padding: 10px 20px 30px 40px; }
+</code></pre>          
         </section>
        
         <!-- Margin -->
@@ -318,13 +326,13 @@ p { margin-top: 10px; }
           <p>CENTERED</p>
 <pre><code class="css">
 div { margin: auto; }
-div { width: 300px; } /* Must have a specified width to work */
+div { width: 300px; } /*Must have a specified width to work*/
 </code></pre>
           <p>FLUSH-RIGHT</p>
 <pre><code class="css">
 div { margin-left: auto; }
 div { margin-right: 5px; }
-div { width: 300px; } /* Must have a specified width to work */
+div { width: 300px; } /*Must have a specified width to work*/
 </code></pre>
         </section>
         
@@ -346,6 +354,25 @@ div { width: 300px; } /* Must have a specified width to work */
           <h2>Questions?</h2>
           <div style = "font-size:1200%; height:100%; margin-top:30%" class ="blue">?
             <div class ="clear"></div></div>
+        </section>
+
+        <section>
+          <h2>Quiz</h2>
+          <p class="left-align">How would I add a border to the top and bottom of this paragraph?</p>
+<pre><code class="html">
+  &lt;p id="my-paragraph">This is a really great paragraph&lt;/p>
+</code></pre>
+
+<pre class="fragment"><code class="css">
+  #my-paragraph {
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+  }</code></pre>
+
+        </section>
+
+        <section>
+          <h1>The end.</h1>
         </section>
       
       </div>
